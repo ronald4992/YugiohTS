@@ -1,0 +1,319 @@
+/* ─── Header ─────────────────────────────────────────────────────────────── */
+
+.usr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.usr-titulo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #eee;
+}
+
+.btn-editar {
+  padding: 5px 16px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-editar:hover {
+  background: #222;
+  color: #eee;
+}
+
+/* ─── Toast ──────────────────────────────────────────────────────────────── */
+
+.usr-toast {
+  background: #0f2e1a;
+  border: 1px solid #1a4a2a;
+  color: #4ade80;
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* ─── Tarjeta perfil ─────────────────────────────────────────────────────── */
+
+.usr-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #141414;
+  border: 1px solid #1e1e1e;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.usr-iniciales {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #185fa5;
+  color: #e6f1fb;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 1px;
+}
+
+.usr-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.usr-nombre {
+  font-size: 20px;
+  font-weight: 600;
+  color: #eee;
+  margin: 0 0 4px;
+}
+
+.usr-invocador {
+  font-size: 13px;
+  color: #185fa5;
+  margin: 0 0 8px;
+  font-style: italic;
+}
+
+.usr-desc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── Stats ──────────────────────────────────────────────────────────────── */
+
+.usr-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-box {
+  background: #141414;
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-val {
+  font-size: 20px;
+  font-weight: 600;
+  color: #eee;
+}
+
+.stat-lbl {
+  font-size: 11px;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ─── Progreso ───────────────────────────────────────────────────────────── */
+
+.usr-progreso-card {
+  background: #141414;
+  border: 1px solid #1e1e1e;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.progreso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progreso-label {
+  font-size: 12px;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.progreso-rango {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.progreso-barra-bg {
+  width: 100%;
+  height: 6px;
+  background: #1e1e1e;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progreso-barra-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.progreso-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ─── Lista de rangos ────────────────────────────────────────────────────── */
+
+.rangos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid #1e1e1e;
+  padding-top: 16px;
+}
+
+.rango-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.1s;
+}
+
+.rango-item.activo {
+  background: #1e1e1e;
+}
+
+.rango-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rango-nombre {
+  font-size: 13px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.rango-req {
+  font-size: 11px;
+  color: #333;
+}
+
+/* ─── Formulario ─────────────────────────────────────────────────────────── */
+
+.usr-form-card {
+  background: #141414;
+  border: 1px solid #1e1e1e;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 9px 12px;
+  color: #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  border-color: #185fa5;
+}
+
+.form-textarea {
+  resize: none;
+  height: 90px;
+  line-height: 1.5;
+}
+
+.form-counter {
+  font-size: 11px;
+  color: #333;
+  text-align: right;
+}
+
+/* ─── Botones form ───────────────────────────────────────────────────────── */
+
+.form-acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-guardar {
+  padding: 8px 20px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: none;
+  background: #185fa5;
+  color: #e6f1fb;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-guardar:hover:not(:disabled) {
+  background: #1a6fc0;
+}
+
+.btn-guardar:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.btn-cancelar {
+  padding: 8px 20px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-cancelar:hover {
+  background: #222;
+  color: #ccc;
+}

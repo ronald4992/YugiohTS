@@ -1,0 +1,162 @@
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+
+.info-hero {
+  text-align: center;
+  padding: 40px 20px 32px;
+  border-bottom: 1px solid #1e1e1e;
+  margin-bottom: 32px;
+}
+
+.info-hero-titulo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #eee;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.info-hero-sub {
+  font-size: 14px;
+  color: #555;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ─── Secciones ──────────────────────────────────────────────────────────── */
+
+.info-seccion {
+  margin-bottom: 36px;
+}
+
+.info-seccion-titulo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+/* ─── Atributos ──────────────────────────────────────────────────────────── */
+
+.atrib-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.atrib-card {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.1s;
+}
+
+.atrib-card:hover {
+  transform: translateY(-2px);
+}
+
+.atrib-nombre {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.atrib-desc {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ─── Tipos ──────────────────────────────────────────────────────────────── */
+
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.tipo-card {
+  background: #141414;
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.15s;
+}
+
+.tipo-card:hover {
+  border-color: #2a2a2a;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  align-self: flex-start;
+}
+
+.tipo-desc {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ─── Conceptos ──────────────────────────────────────────────────────────── */
+
+.conceptos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.concepto-card {
+  background: #141414;
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  padding: 16px 18px;
+  transition: border-color 0.15s;
+}
+
+.concepto-card:hover {
+  border-color: #2a2a2a;
+}
+
+.concepto-titulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ccc;
+  margin: 0 0 8px;
+}
+
+.concepto-texto {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+
+.info-footer {
+  text-align: center;
+  padding: 24px 0 10px;
+  border-top: 1px solid #1e1e1e;
+  font-size: 12px;
+  color: #333;
+}
+
+.info-footer strong {
+  color: #555;
+}
